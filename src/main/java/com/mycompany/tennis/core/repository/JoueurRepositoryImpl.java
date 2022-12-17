@@ -157,7 +157,6 @@ public class JoueurRepositoryImpl {
                 j.setSexe(res.getString("SEXE").charAt(0));
             }
 
-            System.out.println("Joueur trouver");
         } catch (SQLException e) {
             e.printStackTrace();
             try {
@@ -202,7 +201,6 @@ public class JoueurRepositoryImpl {
                 maListe.add(j);
             }
 
-            System.out.println("Joueur trouver");
         } catch (SQLException e) {
             e.printStackTrace();
             try {
