@@ -1,10 +1,11 @@
 package com.mycompany.tennis.core;
 
-import com.mycompany.tennis.core.controller.JoueurController;
+import com.mycompany.tennis.core.controller.EpreuveController;
 
 public class UI {
     public static void main(String[] args) {
-        JoueurController joueurController = new JoueurController();
-        joueurController.afficheDetailJoueur();
+        EpreuveController epreuveController = new EpreuveController();
+        epreuveController.afficheDetailsEpreuve();
+        ;
     }
 }
