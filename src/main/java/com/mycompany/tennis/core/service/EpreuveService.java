@@ -23,8 +23,10 @@ public class EpreuveService {
             session = HibernateUtil.getSessionFactory().getCurrentSession();
             tx = session.beginTransaction();
             epreuve = epreuveRepositoryImpl.getById(id);
+            System.out.println("La classe de la propriete tournoi est " + epreuve.getTournoi().getClass().getName());
             System.out
-                    .println("l'épreuve séléctionnée se déroule en " + epreuve.getAnnee());
+                    .println("l'épreuve séléctionnée se déroule en " + epreuve.getAnnee() + " et il s'agit du tournoi "
+                            + epreuve.getTournoi().getNom());
             tx.commit();
         } catch (Exception e) {
             if (tx != null) {
